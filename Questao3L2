@@ -1,0 +1,30 @@
+package questao3l3;
+
+import java.util.Scanner;
+
+public class Questao3Main {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        float n1, n2, n3, result;
+        System.out.println("Escreva a primeira nota: ");
+        n1 = ler.nextFloat();
+        System.out.println("Escreva a segunda nota: ");
+        n2 = ler.nextFloat();
+        System.out.println("Escreva a terceira nota: ");
+        n3 = ler.nextFloat();
+
+        if ((n1 > n2) && (n1 > n3)) {
+            System.out.println("A maior é: " + n1);
+        }
+        if ((n2 > n1) && (n2 > n3)) {
+            System.out.println("A maior é: " + n2);
+        }
+        if ((n3 > n1) && (n3 > n2)) {
+            System.out.println("A maior é: " + n3);
+        }
+        result = ((n1 + n2 + n3) / 3);
+        System.out.println("A media é: " + result);
+    }
+
+}
