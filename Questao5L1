@@ -1,0 +1,17 @@
+package questao5;
+
+import java.util.Scanner;
+
+public class Questao5Main {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int x, y;
+        System.out.println("Informe um numero:");
+        x = ler.nextInt();
+        y = x * x;
+        System.out.println("O quadrado do numero é:" + y);
+
+    }
+
+}
