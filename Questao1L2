@@ -1,0 +1,25 @@
+package questao1L2;
+
+import java.util.Scanner;
+
+public class Questao1Main {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        float num1;
+        System.out.println("Digite um numero: ");
+        num1 = ler.nextFloat();
+        if (num1 % 2 == 0) {
+            System.out.println("Numero PAR");
+
+        } else {
+            System.out.println("Numero IMPAR");
+        }
+        if (num1 < 0) {
+            System.out.println("NEGATIVO");
+        } else {
+            System.out.println("POSITIVO");
+        }
+    }
+
+}
