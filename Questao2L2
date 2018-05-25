@@ -1,0 +1,32 @@
+package questao2l2;
+
+import java.util.Scanner;
+
+public class Questao2Main {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        float l1, l2, l3;
+        System.out.println("Escreva lado 1: ");
+        l1 = ler.nextFloat();
+        System.out.println("Escreva lado 2: ");
+        l2 = ler.nextFloat();
+        System.out.println("Escreva lado 3: ");
+        l3 = ler.nextFloat();
+        if ((l1 + l2 > l3) && (l2 + l3 > l1) && (l3 + l1 > l2)) {
+            System.out.println("É um triangulo");
+        } else {
+            System.out.println("Não é um triangulo");
+        }
+        if ((l1 == l2 && l1 != l3) || (l1 == l3 && l1 != l2) || (l3 == l2 && l3 != l1)) {
+            System.out.println("É um triangulo Isoceles");
+        }
+        if ((l1 != l3) && (l1 != l2) && (l3 != l1)) {
+            System.out.println("É um triangulo Escaleno");
+        }
+        if ((l1 == l2 && l1 == l3)) {
+            System.out.println("É um triangulo Equilatero");
+        }
+    }
+
+}
