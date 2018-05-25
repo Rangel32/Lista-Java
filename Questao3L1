@@ -1,0 +1,20 @@
+package questao3;
+
+import java.util.Scanner;
+
+public class Questao3Main {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        double pi, result, altura, raio;
+        System.out.println("Dê o valor do raio (em centimetros):");
+        raio = ler.nextInt();
+        System.out.println("Dê o valor da altura(em centimetros):");
+        altura = ler.nextInt();
+        pi = Math.PI;
+        result = pi * (raio * raio) * altura;
+        System.out.println("Volume =" + result + "cm³");
+
+    }
+
+}
