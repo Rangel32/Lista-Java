@@ -1,0 +1,21 @@
+package questao4;
+
+import java.util.Scanner;
+
+public class Questao4Main {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int a, b, c;
+        System.out.println("Informe o valor para A:");
+        a = ler.nextInt();
+        System.out.println("Informe o valor para B");
+        b = ler.nextInt();
+        c = a;
+        a = b;
+        b = c;
+        System.out.println("A= " + a + " B= " + b);
+
+    }
+
+}
